@@ -43,6 +43,8 @@
   font-size: 1rem;
   outline: none;
   font-family: inherit;
+  background-color: #fff;
+  color: #333;
 }
 
 .subscribeButton {
