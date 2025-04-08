@@ -1,5 +1,7 @@
+import Categories from "@/components/categories";
 import styles from "./page.module.css";
 import Header from "@/components/header";
+import HeroBanner from "@/components/heroBanner";
 
 export default function Home() {
   // Dados que seriam obtidos de uma API
@@ -144,17 +146,7 @@ export default function Home() {
       <Header cartItems={ cartItems } />
 
       {/* HERO BANNER */}
-      <section className={styles.heroBanner}>
-        <div className={styles.heroContent}>
-          <h2 className={styles.heroHeading}>
-            Descubra mundos extraordinários
-          </h2>
-          <p className={styles.heroParagraph}>
-            Promoção de lançamentos com até 30% de desconto!
-          </p>
-          <button className={styles.ctaButton}>Ver ofertas</button>
-        </div>
-      </section>
+      <HeroBanner />
 
       {/* FEATURED BOOKS SECTION */}
       <section className={styles.bookSection}>
@@ -206,27 +198,7 @@ export default function Home() {
       </section>
 
       {/* CATEGORIES SECTION */}
-      <section className={styles.categoriesSection}>
-        <div className={styles.sectionHeader}>
-          <h2 className={styles.sectionHeading}>Categorias Populares</h2>
-          <a href="/categorias" className={styles.viewAll}>
-            Ver todas
-          </a>
-        </div>
-
-        <div className={styles.categoriesGrid}>
-          {categories.map((category) => (
-            <a
-              key={category.id}
-              href={`/categoria/${category.id}`}
-              className={styles.categoryCard}
-            >
-              <span className={styles.categoryIcon}>{category.icon}</span>
-              <span className={styles.categoryName}>{category.name}</span>
-            </a>
-          ))}
-        </div>
-      </section>
+      <Categories categories={categories} />
 
       {/* NEW RELEASES SECTION */}
       <section className={`${styles.bookSection} ${styles.newReleases}`}>

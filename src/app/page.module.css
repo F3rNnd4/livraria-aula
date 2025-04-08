@@ -65,55 +65,6 @@
   padding: 0;
 }
 
-/* HERO BANNER STYLES */
-.heroBanner {
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--primary-dark)
-  );
-  color: var(--white);
-  padding: 4rem 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  box-sizing: border-box;
-}
-
-.heroContent {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.heroHeading {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-family: inherit;
-}
-
-.heroParagraph {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.ctaButton {
-  background-color: var(--white);
-  color: var(--primary-color);
-  padding: 0.75rem 2rem;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  font-size: 1rem;
-  transition: var(--transition);
-  cursor: pointer;
-  border: none;
-  outline: none;
-  font-family: inherit;
-}
-
-.ctaButton:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
 /* BOOK SECTION STYLES */
 .bookSection {
@@ -306,50 +257,6 @@
 .bookActions {
   display: flex;
   gap: 0.5rem;
-}
-
-/* CATEGORIES SECTION STYLES */
-.categoriesSection {
-  padding: 2rem;
-  margin-bottom: 2rem;
-  background-color: var(--white);
-  box-sizing: border-box;
-}
-
-.categoriesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
-}
-
-.categoryCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem;
-  background-color: var(--gray-100);
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-  animation: fadeIn 0.5s ease forwards;
-  text-decoration: none;
-  color: inherit;
-  box-sizing: border-box;
-}
-
-.categoryCard:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
-  transform: translateY(-5px);
-}
-
-.categoryIcon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.categoryName {
-  font-weight: 500;
-  text-align: center;
 }
 
 /* NEW RELEASES SECTION STYLES */
